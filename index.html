@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+    <meta name="author" content="kenith">
+    <link rel="shortcut icon" href="source/images/favicon.ico">
+	<meta name="keywords" content="Remindus">
+	<title>Aj</title>
+	<script src="source/jquery-1.9.1.js"></script>
+	<script src="source/smooth-scroll.js"></script>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	 <link href="source/animate.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="source/style.css" type="text/css">
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			smoothScroll.init({
+			    speed: 1000, // Integer. How fast to complete the scroll in milliseconds
+			    easing: 'easeInOutCubic', // Easing pattern to use
+			    updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+			    offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+			    callbackBefore: function ( toggle, anchor ) {}, // Function to run before scrolling
+			    callbackAfter: function ( toggle, anchor ) {} // Function to run after scrolling
+			});
+
+			$(".navbar-nav li a").click(function(){
+				
+				if (!$(".navbar-toggle").hasClass('collapsed')) 
+ 					{
+ 						 $(".navbar-toggle").click();
+ 					}
+ 				$(".navbar-nav li a").removeClass("active");
+ 				$(this).addClass("active");
+ 				
+ 				var id = $(this).attr("href")
+ 				
+ 				if(id == "#")
+ 				{ $("html, body").animate({scrollTop:0}, 1000);}
+
+			});
+
+			// $(".gallery-img").click(function(event){
+			// 	event.preventDefault();
+				
+			// 	var source = $(this).children("img").attr("src")
+			// 	$(".modal-body").html("<img class='img-responsive' src="+source+" alt='image'>");
+			// 	$('#photo-view').modal('show');
+			// });
+
+			// $("#photo-view-close").click(function(){
+			// 	$('#photo-view').modal('hide');
+			// });
+
+			var h = $( window ).height();
+	        $( "#home" ).css( "height", h );
+
+
+	  //       $("#front").on("mouseenter",function(){
+			// 	$(this).addClass(" animated swing");
+			// });
+	  //       $("#front").on("mouseleave",function(){
+	  //       	$(this).removeClass(" animated swing");
+	  //       });
+	        $("#aj-title").on("mouseenter",function(){
+				$(this).addClass(" animated pulse");
+			});
+	        $("#aj-title").on("mouseleave",function(){
+	        	$(this).removeClass(" animated pulse");
+	        });
+		})
+
+	</script>
+
+</head>
+
+<body>
+
+
+<header class = "navbar navbar-default navbar-fixed-top bs-docs-nav" role="banner">
+<div class="container">
+  	<div class="navbar-header">
+  		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#list">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+
+  		<a class="navbar-brand" href="index.html"><img id="aj" class="img-responsive" alt="Responsive image" src="source/images/aj.png">
+  		</a>
+
+  	</div>
+  	<div class="collapse navbar-collapse bs-navbar-collapse" role="navigation" id="list">
+	    <ul class="nav navbar-nav">
+	      <li><a href="#" class="active">Home</a></li>   <!-- class="active" -->
+	      <li><a href="#about" data-scroll >About</a></li>
+	      <li><a href="#profile" data-scroll >Profile</a></li>
+	      <li><a href="#projects" data-scroll>Projects</a></li>
+	      <li><a href="#gallery" data-scroll>Gallery</a></li>
+	      <li><a href="#join" data-scroll>Join Us</a></li>
+	      <li><a href="#contact" data-scroll>Contact</a></li>
+	    </ul>
+	    <ul class="login-nav">
+	    	<li><a href="http://www.ajinfracon.com/webmail">Admin Login</a></li>
+	    </ul>
+	</div>
+</div>
+</header>
+
+<!-- ====================================================================================================================== -->
+
+<div id="home" class="container">
+ 	<div class="row">
+	  <div class="col-xs-12 col-md-8 col-md-offset-2 ">
+
+	  	<img class='img-responsive' src="source/images/aj-title.png" id="aj-title" alt="aj-title">
+	  	<img class='img-responsive' src="source/images/front.png" id="front" alt="front">
+	  	<img class='img-responsive' src="source/images/text.png" id="font_text" alt="front">
+		  
+		<br><br><br>
+	  
+	 </div>
+	
+	</div>
+	
+</div>
+
+<!-- ====================================================================================================================== -->
+
+<div id="about" class="container">
+ 	<div class="frame">
+ 	<div class="row">
+	<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<h4>About</h4>
+	  		<p>We are the civil contracting company who can help with all your infrastructure needs - roads, bridge construction, earthmoving, environmental engineering and lots more. Aj is a leading general contractor based in the states of Maharashtra established in 1992.
+	  		Our commitment to execute projects with highest quality, on schedule and within budgets while adhering to excellent standard of health, safety and environmental position. AJ to be recognized as an icon in the construction community in west and south India. 
+	  		</p>
+	</div>
+	</div>
+	<br><br>
+	<div class="row">
+	<div class="col-xs-12 col-md-8 col-md-offset-2">
+	  		<h4>VISION</h4>
+	  		<div>"We work in close coordination with our clients and architects to offer innovative solutions during preconstruction and post construction phase. We believe in becoming an integral part right from the planning stage to ultimate execution part. We are famous for completing time bound projects before time. The company boasts of excellent team of ancillary work arrangements with best professional expertise in this field. Aided by Total commitment and experience in the field of construction, we have been able to exploit fullest potentials and contribution to the betterment of projects. You will be happy to be associated with a company, which is financially, technically, machinery and manpower wise quite sound and resourceful”.</div>
+	</div>
+	</div>
+	<br><br>
+	<div class="row">
+	<div class="col-xs-12 col-md-8 col-md-offset-2">
+		<h4>CHAIRMAN'S MESSAGE</h4>
+  		<div>
+		    "AJ Infracon has been taking a leading role in providing general contracting services with uncompromised commitment quality, health, safety and environment. We do this through the combination on an open relation with our employees based on mutual trust transparency, accountability and discipline. In preparation to meet the growing market demands for diverse construction, AJ has heavily invested in employing highly qualified senior management team and staff to meet intentional standards and purchased state of the art equipment to participate in upcoming, challenging large scale projects Being proud of our achievements, we will continue to further enhance our commitment and capabilities in the construction industry with integrity and strive for business excellence. "
+		</div><br>
+	</div>
+	</div>
+	</div>
+</div>
+<!-- ====================================================================================================================== -->
+<div id="profile" class="container">
+ 	<div class="row">
+	  <div class="col-xs-12 col-md-8 col-md-offset-2">
+	  		<h4>CORPORATE PROFILE</h4>
+	  		<p>Aj is a leading general contractor based in the states of Maharashtra established in 1992. AJ has successfully completed numerous projects for many prestigious clients in different sectors including:</p>
+	  		<blockquote>
+  				<ul class="list-unstyled">
+				  <li>Commercial building</li>
+				  <li>Residential and Villas</li>
+				  <li>Engineering, procurement, installation, commissioning</li>
+				  <li>Agro oil industries</li>
+				  <li>Landmark building</li>
+				  <li>Forging Industries</li>
+				  <li>Carpets Industries</li>
+				  <li>Erectors Industries</li>
+				  <li>Hotels and resorts</li>
+				  <li>Land developers</li>
+				</ul>
+			</blockquote>
+			<p>Our commitment to execute projects with highest quality, on schedule and within budgets while adhering to excellent standard of health, safety and environmental position. AJ to be recognized as an icon in the construction community in west and south India. we have established an regional office in south to undertake projects in contribution to the large ongoing development</p>
+	  </div>
+	</div>
+	<br>
+
+	<div class="row">
+	<div id="focus_area" class="col-xs-8 col-md-2 col-md-offset-2 col-xs-offset-1">
+		<h4>FOCUS AREAS</h4>
+		<ul class="list-style">
+			<li>Landmark area</li>
+			<li>Structural steel buildings</li>
+			<li>Resorts works</li>
+			<li>Industries</li>
+			<li>Commercial</li>
+		</ul>
+		<br><br>
+	</div>
+	
+	<div id="resources" class="col-xs-8 col-md-2 col-md-offset-4 col-xs-offset-1">
+		<h4>RESOURCES</h4>
+		<ul class="list-style">
+			<li>Offices</li>
+			<li>Fabrication workshop</li>
+			<li>Labor yard & staff rooms</li>
+			<li>Construction laboratory</li>
+			<li>Skilled labor from all over India</li>
+		</ul>
+	</div>
+	</div>
+
+	<br><br>
+	<div class="row">
+	<div id="strength" class="col-xs-10 col-md-8 col-md-offset-2 col-xs-offset-1">
+		<h4>WHAT DO WE DO ?</h4>
+		<p>From filling potholes to moving mountains, supplying aggregate or undertaking excavation, we have the expertise, the team and the machines to take care of it.</p>
+		<ul class="list-style">
+			<li>Civil works</li>
+			<li>Concrete works</li>
+			<li>Curtain wall system</li>
+			<li>Stone cladding</li>
+			<li>Steel structure</li>
+			<li>Architectural finishes</li>
+			<li>MEP works</li>
+			<li>Drainage</li>
+			<li>Plumbing</li>
+			<li>Waste water treatment system</li>
+			<li>Electrical</li>
+			<li>Lift</li>
+		</ul>
+	</div>
+	</div>
+
+</div>
+
+<!-- ====================================================================================================================== -->
+
+<div id="projects" class="container">
+	<div class="row">
+	<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<img class='img-responsive' src="source/images/project-title.png" id="project_title" alt="project-title">
+	</div>
+	</div>
+
+ 	<div class="row">
+ 	<br>
+ 	<div id="projects_off" class="col-xs-8 col-md-4 col-md-offset-2 col-xs-offset-1">
+		<h4>COMPLETED PROJECTS</h4>
+		<ul class="list-style">
+			<li>Swarati bhavan</li>
+			<li>Rajklap Agro oil Industries</li>
+			<li>Phoenix Erectors pvt ltd</li>
+			<li>Sanklap forgins pvt ltd</li>
+			<li>Brintons carpets India pvt ltd</li>
+			<li>National institute of technology</li>
+			<li>Shalimar Rexine India Limited</li>
+			<li>Nidhivan Farms (hayyat group)</li>
+			<li>Mahalaxmi height pimpri</li>
+			<li>Arihant steel &metal wires pvt ltd</li>
+		</ul>
+	</div>
+	<div id="projects_on" class="col-xs-8 col-md-4 col-md-offset-1 col-xs-offset-1">
+		<h4>ONGOING PROJECTS</h4>
+		<ul class="list-style">
+			<li>P Muttanna housing society</li>
+			<li>Mahindra holidays and resorts pvt ltd</li>
+			<li>City center commercial and Residential complex</li>
+			<li>Hotel Baridhya</li>
+			<li>Abilash shopping spot</li>
+		</ul>
+	</div>
+	
+	</div>
+</div>
+
+<!-- ====================================================================================================================== -->
+
+<div id="gallery" class="container">
+	
+ 	<div class="row">
+ 		<div class="col-xs-12 col-md-8 col-md-offset-2 ">
+ 			<img src="source/images/photo_gal.png" id="gallery_title" alt="photo-gallery" class="img-responsive">
+ 			<br>
+ 			<p>Our pledge to our clients is to provide construction services at the highest levels of integrity, safety and quality. Below are the photos of recent projects we worked on.</p>
+ 		</div>
+	</div>
+ 	<div class="row">
+ 	<br>
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<h4></h4>
+			<div id="myCarousel" class="carousel slide">
+				  <ol class="carousel-indicators">
+				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel" data-slide-to="1"></li>
+				    <li data-target="#myCarousel" data-slide-to="2"></li>
+				    <li data-target="#myCarousel" data-slide-to="3"></li>
+				    <li data-target="#myCarousel" data-slide-to="4"></li>
+				    <li data-target="#myCarousel" data-slide-to="5"></li>
+				    <li data-target="#myCarousel" data-slide-to="6"></li>
+				    <li data-target="#myCarousel" data-slide-to="7"></li>
+				    <li data-target="#myCarousel" data-slide-to="8"></li>
+				    <li data-target="#myCarousel" data-slide-to="9"></li>
+				    <li data-target="#myCarousel" data-slide-to="10"></li>
+				    <li data-target="#myCarousel" data-slide-to="11"></li>
+				    <li data-target="#myCarousel" data-slide-to="12"></li>
+				    <li data-target="#myCarousel" data-slide-to="13"></li>
+				    <!-- <li data-target="#myCarousel" data-slide-to="14"></li>
+				    <li data-target="#myCarousel" data-slide-to="15"></li>
+				    <li data-target="#myCarousel" data-slide-to="16"></li> -->
+				    
+				  </ol>
+				  <!-- Carousel items -->
+				  <div class="carousel-inner">
+				    <div class="active item"><img src="source/images/img1.jpg" alt=""></div>
+				    <div class="item"><img class="img-responsive" src="source/images/img2.jpg" alt=""></div>
+				    <div class="item"><img class="img-responsive" src="source/images/img3.jpg" alt=""></div>
+				    <div class="item"><img class="img-responsive" src="source/images/img4.jpg" alt=""></div>
+				    <div class="item"><img class="img-responsive" src="source/images/img5.jpg" alt=""></div>
+				    <div class="item"><img class="img-responsive" src="source/images/img6.jpg" alt=""></div>
+				    <div class="item"><img class="img-responsive" src="source/images/img7.jpg" alt=""></div>
+				    <div class="item"><img class="img-responsive" src="source/images/img8.jpg" alt=""></div>
+				    <div class="item"><img class="img-responsive" src="source/images/img9.jpg" alt=""></div>
+				    <div class="item"><img class="img-responsive" src="source/images/img10.jpg" alt=""></div>
+				    <div class="item"><img class="img-responsive" src="source/images/img11.jpg" alt=""></div>
+				    <div class="item"><img class="img-responsive" src="source/images/img12.jpg" alt=""></div>
+				    <div class="item"><img class="img-responsive" src="source/images/img13.jpg" alt=""></div>
+				    <div class="item"><img class="img-responsive" src="source/images/img14.jpg" alt=""></div>
+				   <!--  <div class="item"><img class="img-responsive" src="source/images/img15.jpg" alt=""></div>
+				    <div class="item"><img class="img-responsive" src="source/images/img16.jpg" alt=""></div>
+				    <div class="item"><img class="img-responsive" src="source/images/img17.jpg" alt=""></div> -->
+				  </div>
+				  <!-- Carousel nav -->
+				  <a id="c_left" class="carousel-control left" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+				  <a id="c_right" class="carousel-control right" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+				</div>
+			<!-- <a href="#" class="gallery-img"><img src="source/images/img1.jpg" alt="img1" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img2.jpg" alt="img2" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img3.jpg" alt="img3" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img4.jpg" alt="img4" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img5.jpg" alt="img5" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img6.jpg" alt="img6" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img7.jpg" alt="img7" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img8.jpg" alt="img8" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img9.jpg" alt="img9" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img10.jpg" alt="img10" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img11.jpg" alt="img11" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img12.jpg" alt="img12" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img13.jpg" alt="img13" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img14.jpg" alt="img14" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img15.jpg" alt="img15" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img16.jpg" alt="img16" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp;
+			<a href="#" class="gallery-img"><img src="source/images/img17.jpg" alt="img17" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp; -->
+			<!-- <a href="#" class="gallery-img"><img src="source/images/img9" alt="img9" class="img-thumbnail img-responsive"></a>&nbsp;&nbsp; -->
+		</div>
+	</div>
+</div>
+
+<!-- ====================================================================================================================== -->
+
+<div id="join" class="container">
+	<div class="row">
+	<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<img class='img-responsive' src="source/images/join-title.png" id="project-title" alt="project-title">
+	</div>
+	</div>
+ 	<div  class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<h4></h4>
+			<br>
+			<p>Helping build the nation's infrastructure is rewarding work. But it takes plenty of people power. We have over 250 staff and we're always keen to take on new recruits to join the team. <br>
+			We know you'll enjoy the satisfaction of building and maintaining our country's roads, bridges and other vital services that keep India humming. We have a great bunch of people who depend on the resourcefulness and support of a motivated crew.<br>
+			Check out our current vacancies shown below - if anything takes your interest feel free to contact us to find out more or apply now!</p>	
+			<br>
+			<div class="vacancies">
+			<h4>Current Vacancies</h4>
+			<p>While we currently have no positions available at this time, we are still keen to hear from you if you have an interest in our company and would like to register for any vacancies that come up in the near future.</p>
+			Contact : <a href="mailto:career@ajinfracon.com?subject=Rj customer contact">career@ajinfracon.com</a></div>
+		</div>
+
+	</div>
+</div>
+
+<!-- ====================================================================================================================== -->
+
+<div id="contact" class="container">
+	<br>
+ 	<div class="row">
+	  <div class="col-xs-12 col-md-8 col-md-offset-2">
+	  		<br>
+	  		<h4>CONTACT US</h4>
+	  		<br>
+	  		<p> We Undertake projects 
+	  			all over India. Contact us @ <br>
+	  			Phone: 02065119007<br>
+				email: <a href="mailto:info@ajinfracon.com?subject=Job interest in AJ">info@ajinfracon.com</a>
+	  		</p>
+	  </div>
+	</div>
+	<div class="row">
+		<div class="col-xs-8 col-md-4 col-md-offset-2 col-xs-offset-1 foot_block">
+			<p>
+			  <b>Registered & Corporate Office </b><br>
+			  AJ Corporate House,
+			  Sr81/1/1 Jawalkar Nagar, <br>
+			  Behind Hotel Shrushti,<br>
+			  Pimple Gurav, Pune -411061, <br>
+			</p>
+		</div>
+		<!-- <div class="col-xs-8 col-md-2 col-md-offset-1 col-xs-offset-1 foot_block">
+			<p>
+				<b>BANGALORE BRANCH </b><br>
+				No 166 Rajanna colony near <br>
+				Basavanagr busstand, <br>
+				Marathahalli post,<br>
+				Bangalore,Karnataka.
+			</p>
+		</div>
+		<div class="col-xs-8 col-md-2 col-md-offset-1 col-xs-offset-1 foot_block">
+			<p>
+				<b>KODAGU BRANCH </b><br>
+				City center phase1,<br>
+				office no  101,<br>
+				Virajpet, South Kodagu,<br>
+				Karnataka.
+			</p>
+		</div> -->
+	</div>
+	<br><br><br>
+	<div class="row footer">
+	  <div class="col-xs-12 col-md-8 col-md-offset-2">
+		<p>
+			Copyright © ajinfracon.com 2014. All Rights Reserved. Designed & Developed by Kenith Aiyappa 
+			<a id="k2a" href="mailto:kenith.777@gmail.com?subject=Website Design client contact">Contact Me.</a>
+		</p> 
+	 </div>
+	</div>
+</div>
+
+
+<!-- <div class="modal fade" id="photo-view" tabindex="-1" role="dialog" aria-labelledby="Photo view" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+      <button type="button" id="photo-view-close" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+  	  </div>
+      <div class="modal-body">
+        
+       	
+      </div>
+    </div> /.modal-content
+  </div>/.modal-dialog 
+</div> /.modal -->
+
+
+</body>
+</html>
