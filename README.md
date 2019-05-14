@@ -1,0 +1,2 @@
+# static-websites
+Web templates
